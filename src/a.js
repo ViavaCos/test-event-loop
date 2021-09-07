@@ -83,11 +83,11 @@ b.then(() => {
 
 /**
  * 压入main()到执行栈
- * 执行宏任务
+ * 执行同步代码
  * 执行栈弹出main()
  * new Promise执行
  * process.nextTick()执行
  * new Promise.then 执行
  * ??? Promise的实例.then执行
- * setTimeout执行
+ * setTimeout执行(宏任务执行)
  */
